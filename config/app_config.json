@@ -1,0 +1,16 @@
+{
+  "kafka": {
+    "bootstrap_servers": "localhost:9092",
+    "input_topic": "raw_text",
+    "output_topic": "translated_text",
+    "group_id": "translation_group"
+  },
+  "languages": {
+    "source": "en",
+    "target": "es"
+  },
+  "batch_settings": {
+    "max_records": 100,
+    "poll_timeout": 1000
+  }
+}
